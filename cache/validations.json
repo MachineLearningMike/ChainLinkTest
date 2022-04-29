@@ -1,0 +1,310 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "AggregatorV3Interface": {
+        "src": "@chainlink\\contracts\\src\\v0.8\\interfaces\\AggregatorV3Interface.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "decimals()",
+          "description()",
+          "version()",
+          "getRoundData(uint80)",
+          "latestRoundData()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ChainLink": {
+        "src": "contracts\\ChainLink.sol:15",
+        "version": {
+          "withMetadata": "d457c38adfc1543fccb93a75958eb73b207e039c2d95d60aca04203fcbc1e118",
+          "withoutMetadata": "96a3077cf8f6305577755283770a44db72b21dde3274694b1ce02ff9eee69404",
+          "linkedWithoutMetadata": "96a3077cf8f6305577755283770a44db72b21dde3274694b1ce02ff9eee69404"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ChainLink",
+            "src": "contracts\\ChainLink.sol:18"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "chainlinkFeeds",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_struct(CLFeed)59_storage)",
+              "contract": "ChainLink",
+              "src": "contracts\\ChainLink.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_struct(CLFeed)59_storage)": {
+              "label": "mapping(address => struct CLFeed)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(CLFeed)59_storage": {
+              "label": "struct CLFeed",
+              "members": [
+                {
+                  "label": "deviation",
+                  "type": "t_uint64",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "heartbeat",
+                  "type": "t_uint64",
+                  "offset": 8,
+                  "slot": "0"
+                },
+                {
+                  "label": "decimal",
+                  "type": "t_uint64",
+                  "offset": 16,
+                  "slot": "0"
+                },
+                {
+                  "label": "gap",
+                  "type": "t_uint64",
+                  "offset": 24,
+                  "slot": "0"
+                },
+                {
+                  "label": "proxy",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint64": {
+              "label": "uint64",
+              "numberOfBytes": "8"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "AggregatorV3Interface": {
+        "src": "@chainlink\\contracts\\src\\v0.8\\interfaces\\AggregatorV3Interface.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "decimals()",
+          "description()",
+          "version()",
+          "getRoundData(uint80)",
+          "latestRoundData()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ChainLink": {
+        "src": "contracts\\ChainLink.sol:15",
+        "version": {
+          "withMetadata": "77e746143feb7e410e1d0550d7c93d049d2bb2df5dbbd7f4f7ccc2878e32e32a",
+          "withoutMetadata": "b00d19676ecf436a92f070ab2767a4113ab199aed4d1c710409db8819208308a",
+          "linkedWithoutMetadata": "b00d19676ecf436a92f070ab2767a4113ab199aed4d1c710409db8819208308a"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "chainlinkFeeds",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_struct(CLFeed)59_storage)",
+              "contract": "ChainLink",
+              "src": "contracts\\ChainLink.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_struct(CLFeed)59_storage)": {
+              "label": "mapping(address => struct CLFeed)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(CLFeed)59_storage": {
+              "label": "struct CLFeed",
+              "members": [
+                {
+                  "label": "deviation",
+                  "type": "t_uint64",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "heartbeat",
+                  "type": "t_uint64",
+                  "offset": 8,
+                  "slot": "0"
+                },
+                {
+                  "label": "decimal",
+                  "type": "t_uint64",
+                  "offset": 16,
+                  "slot": "0"
+                },
+                {
+                  "label": "gap",
+                  "type": "t_uint64",
+                  "offset": 24,
+                  "slot": "0"
+                },
+                {
+                  "label": "proxy",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint64": {
+              "label": "uint64",
+              "numberOfBytes": "8"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "AggregatorV3Interface": {
+        "src": "@chainlink\\contracts\\src\\v0.8\\interfaces\\AggregatorV3Interface.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "decimals()",
+          "description()",
+          "version()",
+          "getRoundData(uint80)",
+          "latestRoundData()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ChainLinkControl": {
+        "src": "contracts\\ChainLinkControl.sol:16",
+        "version": {
+          "withMetadata": "dd349f2a123b6c318db4affff1b2c47e1dd0f41b65b869149e5d7d469eaa2f8d",
+          "withoutMetadata": "b00d19676ecf436a92f070ab2767a4113ab199aed4d1c710409db8819208308a",
+          "linkedWithoutMetadata": "b00d19676ecf436a92f070ab2767a4113ab199aed4d1c710409db8819208308a"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "chainlinkFeeds",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_struct(CLFeed)59_storage)",
+              "contract": "ChainLinkControl",
+              "src": "contracts\\ChainLinkControl.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_struct(CLFeed)59_storage)": {
+              "label": "mapping(address => struct CLFeed)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(CLFeed)59_storage": {
+              "label": "struct CLFeed",
+              "members": [
+                {
+                  "label": "deviation",
+                  "type": "t_uint64",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "heartbeat",
+                  "type": "t_uint64",
+                  "offset": 8,
+                  "slot": "0"
+                },
+                {
+                  "label": "decimal",
+                  "type": "t_uint64",
+                  "offset": 16,
+                  "slot": "0"
+                },
+                {
+                  "label": "gap",
+                  "type": "t_uint64",
+                  "offset": 24,
+                  "slot": "0"
+                },
+                {
+                  "label": "proxy",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint64": {
+              "label": "uint64",
+              "numberOfBytes": "8"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    }
+  ]
+}

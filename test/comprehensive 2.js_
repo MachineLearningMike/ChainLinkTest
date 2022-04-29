@@ -24,7 +24,7 @@ const {
   getCreate2Address,
   sqrt,
   ZERO_ADDRESS,
-} = require("./utils");
+} = require("./utils.js_");
 const { assert } = require("console");
 const { yellow, cyan } = require("colors");
 const { zeroAddress } = require("ethereumjs-util");

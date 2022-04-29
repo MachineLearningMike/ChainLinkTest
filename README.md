@@ -1,1 +1,3 @@
-# ChainLinkTest
+run:
+
+node connector <wallet>
